@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import order from './order';
+import menu from './app.reducer.menu';
+import cart from './app.reducer.cart';
 
 export default combineReducers({
     routing: routerReducer,
-    order
+    menu,
+    cart
 })

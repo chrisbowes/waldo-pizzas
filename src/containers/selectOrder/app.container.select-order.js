@@ -1,23 +1,19 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { 
-  dataRequested, 
-  orderAddToCartRequest
-} from '../../actions/order';
-import SelectOrder from '../../components/selectOrder';
+import { dataRequested, } from '../../actions/app.actions.menu';
+import { addToCartRequest } from '../../actions/app.actions.cart';
+import SelectOrder from '../../components/selectOrder/app.component.select-order';
 
 const mapStateToProps = state => {
   return ({
-    data: state.order.data,
-    cart: state.order.cart,
-    message: state.order.message,
-    isLoading: state.order.isLoading
+    data: state.menu.data,
+    isLoading: state.menu.isLoading
   })  
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   fetchOptions: () => dataRequested(),
-  selectItem: ( item ) => orderAddToCartRequest( item )
+  selectItem: ( item ) => addToCartRequest( item )
 }, dispatch)
 
 export default connect(
