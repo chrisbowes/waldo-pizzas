@@ -11,9 +11,7 @@ export default class ReviewOrder extends React.Component {
         return (
             <div className="">
                 <h2>Review Order</h2>
-                { isLoading ?
-                    <Loader />
-                    :
+                { cartItems.length > 0 ?
                     <div>
                         { cartItems && cartItems.map( ( item, index ) => {
                             return (
@@ -27,6 +25,8 @@ export default class ReviewOrder extends React.Component {
                             )
                         })}
                     </div>
+                    :
+                    <div>You have no items in your order</div>
                 }
             </div>
         )

@@ -24,7 +24,7 @@ const ListItem = (props) => {
                     </span>
                 }
             </h3>
-            {props.cartView &&
+            {props.cartView ?
                 <div>
                     {maxOptions ?
                         <><strong>{selectedOptionsCount}</strong> of <strong>{maxOptions}</strong> available options chosen</>
@@ -32,6 +32,14 @@ const ListItem = (props) => {
                         <><strong>{selectedOptionsCount}</strong> chosen. Unlimited toppings</>
                     }
 
+                </div>
+                :
+                <div>
+                    {maxOptions ?
+                        <>Select and add up to <strong>{maxOptions}</strong> options</>
+                        :
+                        <>Select and add unlimited toppings</>
+                    }
                 </div>
             }
             {props.item.toppings.map((option, optionIndex) => {

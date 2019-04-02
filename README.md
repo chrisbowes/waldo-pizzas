@@ -8,6 +8,10 @@ As I do not have a great deal of Apollo experience I chose thisa approach as I a
 
 I have bnot written front end unit tests for the app due to time contraints, but have tried to keep the components small and lightweight and easily testable. Proptypes are used in the lower level ui components.
 
+## Notes on the UI
+
+I believe the app meets the functional requirements. The UI and UX is quite basic and there is much room for improvement in terms of user feedback - alerting the user to the maximum number of available options (toppings) for each Pizza etc. I can see many ways, with time, that the user experience could be enhanced.
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -7,7 +7,8 @@ import SelectOrder from '../../components/selectOrder/app.component.select-order
 const mapStateToProps = state => {
   return ({
     data: state.menu.data,
-    isLoading: state.menu.isLoading
+    isLoading: state.menu.isLoading,
+    cartTotal: state.cart.items.length
   })  
 }
 

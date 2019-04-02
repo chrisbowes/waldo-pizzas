@@ -7,6 +7,11 @@ export default class SelectOrder extends React.Component {
     componentWillMount() {
         this.props.fetchOptions();
     }
+    componentWillUpdate(nextProps) {
+        if ( this.props.cartTotal < nextProps.cartTotal ) {
+            this.props.history.push(`ReviewOrder`);
+        }
+    }
     render() {
         const isLoading = this.props.isLoading;
         const pizzaMenu = this.props.data && this.props.data.pizzaSizes;
