@@ -13,10 +13,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   fetchOptions: () => dataRequested(),
-  selectItem: ( item ) => addToCartRequest( item )
-}, dispatch)
+  selectItem: ( data, index ) => addToCartRequest( JSON.parse ( JSON.stringify ( data[ index ] ) ) )
+}, dispatch )
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SelectOrder)
+)( SelectOrder )

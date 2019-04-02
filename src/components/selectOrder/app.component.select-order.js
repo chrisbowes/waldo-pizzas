@@ -19,11 +19,12 @@ export default class SelectOrder extends React.Component {
                     <div>
                         { pizzaMenu && pizzaMenu.map( ( item, index ) => {
                             return (
-                                <ListItem 
+                                <ListItem
+                                    key={ index }
                                     item={ item } 
                                     itemIndex={ index } 
                                     cartView={ false }
-                                    selectItem={ this.props.selectItem } />
+                                    selectItem={ () => { this.props.selectItem( pizzaMenu, index ) } } />
                             )
                         })}
                     </div>

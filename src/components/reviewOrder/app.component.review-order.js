@@ -4,6 +4,7 @@ import ListItem from '../listItem/app.component.list-item';
 
 
 export default class ReviewOrder extends React.Component {
+    
     render() {
         const isLoading = this.props.isLoading;
         const cartItems = this.props.cart && this.props.cart;
@@ -16,12 +17,13 @@ export default class ReviewOrder extends React.Component {
                     <div>
                         { cartItems && cartItems.map( ( item, index ) => {
                             return (
-                                <ListItem 
+                                <ListItem
+                                    key={ index }
                                     item={ item } 
                                     itemIndex={ index } 
                                     cartView={ true }
-                                    toggleSelectOption={ () => { console.log('select option') } }
-                                    removeItemFromCart={ () => { console.log('remove item') } } />
+                                    toggleSelectOption={ this.props.toggleOption }
+                                    removeItem={ () => { this.props.removeItem( index ) } } />
                             )
                         })}
                     </div>
@@ -29,4 +31,4 @@ export default class ReviewOrder extends React.Component {
             </div>
         )
     }
-}
+} 

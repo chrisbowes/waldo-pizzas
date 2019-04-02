@@ -10,6 +10,7 @@ const App = () => (
     <header className="ciam-portal-app__header ciamUI-layout-wrapper">
       <h1>Waldo's Pizzas</h1>
     </header>
+    <button><Link to="/">Select Order </Link></button>
     <button><Link to="ReviewOrder">Review Order <MiniCart /></Link></button>
     <main>
       <Route exact path="/" component={ SelectOrder } />

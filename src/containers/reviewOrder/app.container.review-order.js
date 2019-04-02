@@ -1,6 +1,6 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { addToCartRequest } from '../../actions/app.actions.cart';
+import { addToCartRequest, removeFromCartRequest, toggleOptionSelection } from '../../actions/app.actions.cart';
 import ReviewOrder from '../../components/reviewOrder/app.component.review-order';
 
 const mapStateToProps = state => {
@@ -11,7 +11,9 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  selectItem: ( item ) => addToCartRequest( item )
+  selectItem: ( item ) => addToCartRequest( item ),
+  removeItem: ( itemIndex ) => removeFromCartRequest( itemIndex ),
+  toggleOption: ( itemIndex, item, optionIndex ) => toggleOptionSelection( itemIndex, item, optionIndex )
 }, dispatch)
 
 export default connect(
