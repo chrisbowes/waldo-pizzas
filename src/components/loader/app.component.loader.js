@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './index.css';
 
 const Loader = (props) => {
     return (
-        <div>
+        <div className="waldo-ui-loader">
             <div>
                 <svg
                     width={props.spinnerWidth ? props.spinnerWidth : "8rem"}
