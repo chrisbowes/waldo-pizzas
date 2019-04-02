@@ -1,0 +1,24 @@
+.waldo-ui-minicart {
+    display:inline-block;
+}
+
+.waldo-ui-minicart__total {
+    background-color: #c13d3d;
+    display: inline-block;
+    border-radius: 0.3rem;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    margin: 0 0.3rem;
+    font-weight: 500;
+}
+
+.waldo-ui-minicart__price {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 0.3rem;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    margin: 0 0.3rem;
+    font-weight: 500;
+    color: #666666;
+}

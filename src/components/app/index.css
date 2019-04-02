@@ -1,0 +1,33 @@
+/* Basic Layout */
+
+.waldo-ui-layout__wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+    min-width: 32rem;
+  }
+  
+  /* Nav */
+  
+  .waldo-ui-layout__nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .waldo-ui-layout__nav-link {
+    flex: 1 1 0;
+    margin: 0 0.5rem;
+  }
+
+  .waldo-ui-layout__nav-link--cart button {
+      background-color: #5dbf56;
+  }
+  
+  .waldo-ui-layout__nav-link button {
+    width: 100%;
+  }
+  
+  .waldo-ui-layout__main {
+    margin: 0 0.5rem;
+  }

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './index.css';
 
 const MiniCart = (props) => {
     return (
-        <span>
-            <span>{ props.totalItems }</span>
-            <span>${ props.totalPrice }</span>
+        <span className="waldo-ui-minicart"> 
+            <span className="waldo-ui-minicart__total">{ props.totalItems }</span>
+            <span className="waldo-ui-minicart__price">${ props.totalPrice }</span>
         </span>
     )
 }

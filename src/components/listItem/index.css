@@ -1,0 +1,29 @@
+.waldo-ui-list-item__header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.waldo-ui-list-item__price-options {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: capitalize;
+}
+.waldo-ui-list-item__price {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: 300;
+}
+.waldo-ui-list-item__option-name{
+    text-transform: capitalize;
+}
+.waldo-ui-list-item__option{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    text-align: center;
+}
