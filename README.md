@@ -4,10 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The app is built using GraphQL and the APolloClient library to load data into an initialState, which is then managed by Redux.
 
-As I do not have a great deal of Apollo experience I chose thisa approach as I am familiar with Redux. However, having read and experimented further with Apollo, in hindsight I believe it may have been better and cleaner to manage the entire state with Apollo. In the interests of best demonstrating my current abilities I stuck with Redux. 
-
-I have bnot written front end unit tests for the app due to time contraints, but have tried to keep the components small and lightweight and easily testable. Proptypes are used in the lower level ui components.
-
 ## Notes on the UI
 
 I believe the app meets the functional requirements. The UI and UX is quite basic and there is much room for improvement in terms of user feedback - alerting the user to the maximum number of available options (toppings) for each Pizza etc. I can see many ways, with time, that the user experience could be enhanced.
